@@ -1,0 +1,275 @@
+:root {
+    --primary-text-color: hsl(251, 31%, 79%);
+    --primary-color: hsl(245, 32%, 15%);
+    --secondary-color: hsl(255, 61%, 50%);
+    --accent-color: hsl(232, 73%, 32%);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Ensures there's no overflow or extra space around the edges */
+}
+
+body {
+    background-color: hsl(249, 84%, 5%);
+    color: var(--primary-text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
+    /* border: 1px solid green; */
+}
+
+.navbar-logo {
+    width: 50px;
+    margin-right: 35rem;
+    display: flex;
+    margin-bottom: -10px;
+}
+
+.navbar-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.navbar-container ul i {
+    /* vertical-align: middle; */
+    margin-top: 3px;
+}
+
+.navbar-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    display: flex;
+    text-align: center;
+}
+
+.link:hover,
+.link:focus {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.link:not(:hover) {
+    color: var(--primary-text-color);
+    transition: color 1.5s;
+}
+
+.navbar-container ul li:first-child {
+    font-size: 1.5em;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 140px;
+    /* margin: 0; */
+    padding: 10px;
+    /* z-index: 10; */
+}
+
+.banner-container {
+    margin-top: 50px;
+}
+
+.phase-1-content {
+    margin-top: -5rem;
+}
+
+h3,
+.title {
+    background: linear-gradient(242deg, rgba(110, 226, 245, 1) 0%, rgba(0, 27, 176, 1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    /* display: inline-block; */
+    text-align: center;
+}
+
+h3.title::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.08em;
+    background-color: #f0ebf1;
+    animation: border-bottom 0.5s ease forwards;
+}
+
+@keyframes border-bottom {
+    from {
+        width: 0;
+        margin-bottom: 50px;
+
+    }
+
+    to {
+        width: 70%;
+        margin-bottom: 5px;
+    }
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+th,
+td {
+    border-left: 1px solid rgb(152, 146, 146);
+    padding: 8px;
+    text-align: center;
+}
+
+th:first-child,
+td:first-child {
+    border-left: none;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 225px;
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    border: none transparent;
+    height: 130px;
+    padding: 0 2rem;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(242deg, rgba(110, 226, 245, 1) 0%, rgba(0, 27, 176, 1) 90%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    /* transition: background 0.7s ease-in-out; */
+    /* This line ensures the transition */
+    margin-left: 400px;
+    width: 180px;
+}
+
+.button:hover {
+    background: linear-gradient(121deg, rgba(110, 226, 245, 1) 0%, rgba(0, 27, 176, 1) 90%);
+}
+
+img.flag {
+    width: 70%;
+    /* height: 100%; */
+    /* margin-bottom: 10px; */
+    margin-right: 0;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.map {
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+
+    th,
+    td {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    th,
+    td {
+        font-size: 12px;
+        /* Further adjust font size for even smaller screens */
+    }
+
+    table {
+        width: 90%;
+        /* Adjust table width for smaller screens */
+    }
+}

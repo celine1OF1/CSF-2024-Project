@@ -1,0 +1,246 @@
+:root {
+    --primary-text-color: hsl(251, 31%, 79%);
+    --primary-color: hsl(245, 32%, 15%);
+    --secondary-color: hsl(255, 61%, 50%);
+    --accent-color: hsl(232, 73%, 32%);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: hsl(249, 84%, 5%);
+    color: var(--primary-text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    width: 50px;
+    margin-right: 35rem;
+}
+
+.navbar-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar-container ul i {
+    margin-top: 3px;
+}
+
+.navbar-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    display: flex;
+    text-align: center;
+}
+
+.link:hover,
+.link:focus {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.link:not(:hover) {
+    color: var(--primary-text-color);
+    transition: color 1.5s;
+}
+
+.navbar-container ul li:first-child {
+    font-size: 1.5em;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 140px;
+    padding: 10px;
+}
+
+.banner-container {
+    margin-top: 50px;
+}
+
+.phase-1-content {
+    margin-top: 0;
+    margin-bottom: 20rem;
+    height: 300px;
+}
+
+h3.title {
+    background: linear-gradient(242deg, rgba(110, 226, 245, 1) 0%, rgba(0, 27, 176, 1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+}
+
+h3.title::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.08em;
+    background-color: #f0ebf1;
+    animation: border-bottom 0.5s ease forwards;
+}
+
+@keyframes border-bottom {
+    from {
+        width: 0;
+        margin-bottom: 50px;
+    }
+
+    to {
+        width: 70%;
+        margin-bottom: 5px;
+    }
+}
+
+.description {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 2rem 20rem;
+}
+
+.content {
+    display: flex;
+    gap: 5rem;
+    /* border: 1px solid white; */
+    padding: 1rem;
+    margin: 5rem;
+}
+
+.content-2 {
+    flex-direction: row-reverse;
+}
+
+.graphic {
+    width: 600px;
+    /* max-width: 40%; */
+    height: auto;
+}
+
+.text {
+    flex: 1;
+}
+
+.content-title {
+    background: linear-gradient(242deg, rgba(110, 226, 245, 1) 0%, rgba(0, 27, 176, 1) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7em;
+    font-weight: 900;
+    margin-top: 5rem;
+}
+
+.content-description {
+    font-weight: 500;
+}
+
+.phase-2-content {
+    margin-top: 60rem;
+    line-height: 1.5;
+}
+
+.services {
+    /* font-family: Lombok, serif; */
+    /* letter-spacing: 2px; */
+    font-size: 36px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.services-word {
+    background: linear-gradient(rgb(0, 99, 246), rgb(0, 50, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-text {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 15px 45px 15px;
+    /*outline: 1px solid black;*/
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* border: 3px solid #ccc; */
+    border-radius: 8px;
+    height: fit-content;
+    width: 300px;
+    text-align: center;
+    background: hsl(246, 38%, 10%);
+    color: white;
+}
+
+.card-1 i {
+    font-size: 4em;
+    background: linear-gradient(rgb(48, 42, 221), rgb(228, 3, 121));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.card-1-main-text,
+.sub-text {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card-1-main-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: 1em;
+    margin-top: 0;
+    color: var(--primary-text-color);
+}
